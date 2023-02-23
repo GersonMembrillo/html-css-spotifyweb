@@ -360,7 +360,6 @@ background-color: transparent;
 .album, .playbar-volume{
   width: 230px;
   height: 100%;
-  border: 1px solid pink;
 }
 
 .album img{
@@ -398,7 +397,6 @@ background-color: transparent;
 .playbar-control{
   width: 40%;
   height: 100%;
-  border: 1px solid pink;
 }
 
 /* control */
@@ -434,6 +432,28 @@ background-color: transparent;
     width: 60px;
     bottom: 22px;
 
+}
+
+.bar-volume {
+  height: 4px;
+  background: var(--text-color);
+  border-radius: 2px;
+  width: 120px;
+  position: relative;
+}
+
+.bar-white-volume {
+  position: absolute;
+  height: 4px;
+  background: var(--white);
+  border-radius: 2px;
+  width: 25px;
+  right: 95px;
+
+}
+
+.playbar-volume{
+  white-space: 10px;
 }
 
 @media screen and (max-width: 1200px){
