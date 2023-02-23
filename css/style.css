@@ -35,8 +35,20 @@ body{
   align-content: center;
 }
 
+.items-center{
+  align-item: center;
+}
+
+.content-center{
+  align-content: center;
+}
+
 .d-flex{
   display: flex;
+}
+
+.wrap{
+  flex-wrap: wrap;
 }
 
 .justify-end{
@@ -94,10 +106,11 @@ main{
 
 .side-nav img{
   width: 30px;
+  margin-right: 10px;
 }
 
 .side-nav li{
-  opacity: 0.8;
+  opacity: 0.5;
 }
 
 .side-nav li:hover {
@@ -109,8 +122,16 @@ main{
   padding-left: 15px;
 }
 
+.side-nav li{
+  padding-bottom: 10px;
+}
+
+.side-nav a:hover{
+  border-left: 5px solid var(--green-decoration);
+}
+
 .bottom-nav{
-  border: 1px solid var(--green-decoration);
+  /* border: 1px solid var(--green-decoration); */
   height: 80px;
   width: 100%;
 }
@@ -197,20 +218,20 @@ background-color: transparent;
 }
 
 .container{
-  border: 1px solid white;
+  /* border: 1px solid white; */
   padding: 15px;
 }
 
 /* boostrap rulez */
 /* and main-container */
 .row{
-  border: 1px solid white;
+  /* border: 1px solid white; */
   margin-left: -15px;
   margin-right: -15px;
 }
 
 .col{
-  border: 1px solid red;
+  /* border: 1px solid red; */
   padding: 15px;
   width: calc(100% / 6);
   text-align: center;
@@ -241,6 +262,66 @@ background-color: transparent;
 .cover-image:hover::after{
   opacity: 1;
 }
+
+.playlist li, .side-nav span, .bottom-nav li{
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+.playlist li{
+  padding: 20px 20px 0px 20px ;
+  opacity: 0.5;
+  font-size: 0.8em;
+}
+
+.fa-solid.fa-square-plus{
+  font-size: 40px;
+  padding-right: 10px;
+}
+
+.playlist h4{
+  padding: 20px 0px 0px 20px;
+}
+
+/* bottom-nav */
+
+.bottom-nav img{
+  width: 20px;
+  margin-right: 10px;
+}
+
+.upper-bottom-nav img{
+  width: 15px;
+}
+
+.upper-bottom-nav a{
+  width: 190px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--text-color);
+}
+
+.upper-bottom-nav span{
+  opacity: 0.5;
+}
+
+.lower-botton-nav a{
+  margin-top: 10px;
+}
+
+.bottom-nav li{
+  padding-left: 20px;
+}
+
+.profile{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--text-color);
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+/* col */
 
 .circle{
   border: 1px solid blue;
@@ -310,16 +391,14 @@ background-color: transparent;
       width: 70px;
     }
 
-    .logo {
+    .logo, .side-nav span, .playlist{
       display: none;
     }
 
     .logo-small {
       display: block;
-    }
-
-    .side-nav span {
-      display: none;
+      width: 40px;
+      margin: 0 auto;
     }
 
     .main-content {
@@ -329,6 +408,15 @@ background-color: transparent;
     .call-to-action {
       width: calc(100% - 70px);
     }
+
+    .bottom-nav span, .bottom-nav h4{
+      display: none;
+    }
+
+    .upper-bottom-nav a{
+      border-bottom: none;
+    }
+
 
 }
 
