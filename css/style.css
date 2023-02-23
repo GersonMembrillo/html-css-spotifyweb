@@ -16,6 +16,10 @@
   --green-decoration: #ADFF2F;
 }
 
+.debug{
+  border: 1px solid red;
+}
+
 html{
   scroll-behavior: smooth;
 }
@@ -66,6 +70,10 @@ body{
 a {
   color: var(--white);
   text-decoration: none;
+}
+
+ul{
+  list-style: none;
 }
 
 /* wrapper */
@@ -347,7 +355,7 @@ background-color: transparent;
   opacity: 1;
 }
 
-/* controller */
+/* controller album */
 
 .album, .playbar-volume{
   width: 230px;
@@ -355,10 +363,77 @@ background-color: transparent;
   border: 1px solid pink;
 }
 
+.album img{
+  height: 100%;
+}
+
+.album-cover{
+  padding: 20px 10px;
+}
+
+.album-info span{
+  font-size: 0.5rem;
+  opacity: 0.5;
+  font-weight: bold;
+}
+
+.album-info{
+  margin: auto;
+  line-height: 0.5rem;
+}
+
+.right-album{
+    margin: auto 0;
+}
+
+.right-album a{
+  opacity: 0.5;
+  transition: opacity;
+}
+
+.right-album a:hover {
+  opacity: 1;
+}
+
 .playbar-control{
   width: 40%;
   height: 100%;
   border: 1px solid pink;
+}
+
+/* control */
+
+.control{
+  height: 50%;
+  width: 100%;
+}
+
+.control-top ul li, .control-bottom ul li{
+  display: block;
+  padding: 10px 15px;
+}
+
+.control-bottom span{
+    font-size: 0.5rem;
+      font-weight: bold;
+}
+
+.bar{
+  height: 4px;
+  background: var(--text-color);
+  border-radius: 2px;
+  width: 250px;
+  position: relative;
+}
+
+.bar-white{
+  position: absolute;
+  height: 4px;
+    background: var(--white);
+    border-radius: 2px;
+    width: 60px;
+    bottom: 22px;
+
 }
 
 @media screen and (max-width: 1200px){
