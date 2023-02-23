@@ -26,6 +26,10 @@ body{
 
 /* utilities */
 
+.text-center{
+  text-align: center;
+}
+
 .align-center{
   align-items: center;
   align-content: center;
@@ -161,9 +165,26 @@ a{
 
 .main-section ul{
 justify-content: center;
-gap: 20px;
+flex-wrap: wrap;
 list-style: none;
-padding-top: 15px;
+}
+
+.main-section nav ul li{
+display: block;
+padding: 5px 15px;
+}
+
+.main-section nav ul li:after{
+content: '';
+display: block;
+width: 50%;
+height: 2px;
+margin: 0 auto;
+background-color: transparent;
+}
+
+.main-section nav ul li:hover:after{
+  background-color: var(--green-decoration);
 }
 
 .container{
@@ -200,9 +221,13 @@ padding-top: 15px;
   width: 100%;
 }
 
-.col p, .main-section ul a{
-  color: var(--text-color);
+.col p, .main-section ul li{
+  opacity: 0.5;
   font-size: 0.8em;
+}
+
+.main-section ul li:hover{
+  opacity: 1;
 }
 
 /* controller */
