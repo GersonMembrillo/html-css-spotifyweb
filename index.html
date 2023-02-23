@@ -25,7 +25,28 @@
 	<body>
 		<div class="wrapper">
 			<main class="d-flex">
-				<nav class="main-nav"></nav>
+				<nav class="main-nav">
+					<div class="top-nav">
+						<div class="logo">
+							<img src="./img/logo.svg" alt="" />
+						</div>
+						<div class="logo-small">
+							<img src="./img/logo-small.svg" alt="" />
+						</div>
+						<section class="side-nav">
+							<ul>
+								<li><a href="#"></a><img src="./img/home.svg" alt="" /><span>Home</span></li>
+								<li><a href="#"></a><img src="./img/search.svg" alt="" /><span>Cerca</span></li>
+								<li>
+									<a href="#"></a><img src="./img/libreria.svg" alt="" /><span
+										>La tua libreria</span
+									>
+								</li>
+							</ul>
+						</section>
+					</div>
+					<div class="bottom-nav"></div>
+				</nav>
 				<section class="main-content">
 					<div class="call-to-action d-flex align-center justify-end">
 						<a class="button" href="#">EFFETTUA L'UPGRADE</a>
@@ -119,7 +140,11 @@
 					</div>
 				</section>
 			</main>
-			<div id="playbar"></div>
+			<div id="playbar" class="d-flex justify-between align-center">
+				<div class="album"></div>
+				<div class="playbar-control"></div>
+				<div class="playbar-volume"></div>
+			</div>
 		</div>
 	</body>
 </html>

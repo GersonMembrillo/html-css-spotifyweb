@@ -39,6 +39,14 @@ body{
   justify-content: flex-end;
 }
 
+.justify-between{
+  justify-content: space-between;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
 a {
   color: var(--white);
   text-decoration: none;
@@ -59,6 +67,48 @@ main{
   height: calc(100% - 90px);
   background-color: var(--blue-bg-main);
   overflow: hidden;
+}
+/* main-nav */
+
+.top-nav{
+  width: 100%;
+  height: calc(100% - 80px);
+}
+
+.logo{
+  padding: 20px;
+}
+
+.logo-small{
+  padding: 5px;
+  display: none;
+}
+
+.logo img, .logo-small{
+  width: 70%;
+}
+
+.side-nav img{
+  width: 30px;
+}
+
+.side-nav li{
+  opacity: 0.8;
+}
+
+.side-nav li:hover {
+  opacity: 1;
+}
+
+.side-nav a{
+  border-left: 5px solid transparent;
+  padding-left: 15px;
+}
+
+.bottom-nav{
+  border: 1px solid var(--green-decoration);
+  height: 80px;
+  width: 100%;
 }
 
 #playbar{
@@ -152,10 +202,24 @@ padding-top: 15px;
 
 .col p, .main-section ul a{
   color: var(--text-color);
-  font-size: small;
+  font-size: 0.8em;
 }
 
-@media screen and (max-width: 992px){
+/* controller */
+
+.album, .playbar-volume{
+  width: 230px;
+  height: 100%;
+  border: 1px solid pink;
+}
+
+.playbar-control{
+  width: 40%;
+  height: 100%;
+  border: 1px solid pink;
+}
+
+@media screen and (max-width: 1200px){
 
 .col {
       width: calc(100% / 4);
@@ -167,27 +231,49 @@ padding-top: 15px;
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
 
 .col {
-        width: calc(100% / 2);
+        width: calc(100% / 3);
       }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .col {
+    width: calc(100% / 2);
+  }
+
+    .main-nav {
+      width: 70px;
+    }
+
+    .logo {
+      display: none;
+    }
+
+    .logo-small {
+      display: block;
+    }
+
+    .side-nav span {
+      display: none;
+    }
+
+    .main-content {
+      width: calc(100% - 70px);
+    }
+
+    .call-to-action {
+      width: calc(100% - 70px);
+    }
 
 }
 
 @media screen and (max-width: 556px) {
 
-.main-nav{
-  width: 70px;
-}
 
-.main-content {
-  width: calc(100% - 70px);
-}
-
-.call-to-action {
-  width: calc(100% - 70px);
-}
 
 .col {
   width: 100%;
