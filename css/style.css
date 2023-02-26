@@ -444,11 +444,17 @@ background-color: transparent;
 }
 
 .music-bar{
-  margin-top: 7px;
+  width: 80%;
 }
 
-.slidecontainer{
-  width: 250px;
+
+.slidecontainer {
+    -webkit-appearance: none;
+      appearance: none;
+      width: 100%;
+      height: 4px;
+      background-color: var(--text-color);
+      border-radius: 10px;
 }
 
 .bar{
