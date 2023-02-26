@@ -271,6 +271,12 @@ background-color: transparent;
   opacity: 1;
 }
 
+/* top nav */
+
+.top-nav{
+  overflow: hidden;
+}
+
 .playlist li, .side-nav span, .bottom-nav li{
   font-weight: bold;
   font-size: 0.8em;
@@ -282,6 +288,10 @@ background-color: transparent;
   font-size: 0.8em;
 }
 
+.playlist li:hover{
+  opacity: 1;
+}
+
 .fa-solid.fa-square-plus{
   font-size: 40px;
   padding-right: 10px;
@@ -291,7 +301,21 @@ background-color: transparent;
   padding: 20px 0px 0px 20px;
 }
 
+.playlist{
+  height: 60%;
+  overflow: hidden;
+}
+
+.playlist ul{
+  overflow: auto;
+  height: 80%;
+}
+
 /* bottom-nav */
+
+.bottom-nav {
+  background-color: var(--black);
+}
 
 .bottom-nav img{
   width: 20px;
@@ -332,7 +356,6 @@ background-color: transparent;
 /* col */
 
 .circle{
-  border: 1px solid blue;
   margin: 0 auto;
     overflow: hidden;
     border-radius: 50%;
@@ -407,13 +430,25 @@ background-color: transparent;
 }
 
 .control-top ul li, .control-bottom ul li{
-  display: block;
+  display: ;
   padding: 10px 15px;
+}
+
+.fa-regular.fa-circle-play{
+  font-size: 35px;
 }
 
 .control-bottom span{
     font-size: 0.5rem;
       font-weight: bold;
+}
+
+.music-bar{
+  margin-top: 7px;
+}
+
+.slidecontainer{
+  width: 250px;
 }
 
 .bar{
@@ -438,7 +473,8 @@ background-color: transparent;
   height: 4px;
   background: var(--text-color);
   border-radius: 2px;
-  width: 120px;
+  width: 100px;
+  margin-right: 20px;
   position: relative;
 }
 
