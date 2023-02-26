@@ -565,4 +565,8 @@ background-color: transparent;
   width: 100%;
 }
 
+.playbar-volume{
+  display: none;
+}
+
 }
