@@ -378,6 +378,13 @@ background-color: transparent;
   opacity: 1;
 }
 
+/* playbar */
+
+#playbar{
+  position: absolute;
+  z-index: 1000;
+}
+
 /* controller album */
 
 .album, .playbar-volume{
